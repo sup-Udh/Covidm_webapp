@@ -2,7 +2,7 @@
   "name": "covidm-webapp",
   "version": "1.0.0",
   "description": "The only app required to figh the virus",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
