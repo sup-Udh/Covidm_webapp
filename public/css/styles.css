@@ -1,0 +1,59 @@
+
+.header{
+    background-color: #242582;
+    width: 2000px;
+    height: 500px;
+    padding: 50px;
+    border: 1px solid blue;
+}
+
+.heading1{
+    font-family: 'Lato', sans-serif;
+    color:white;
+
+
+}
+
+.btn1{
+    margin-left: 100px;
+}
+
+
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .typing-demo {
+    width: 35ch;
+    animation: typing 2s steps(30), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    margin-left : -500px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+.find{
+    margin-top:500px;
+    margin-left: 700px;
+    margin-bottom: -300px; 
+}

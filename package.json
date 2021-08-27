@@ -11,6 +11,14 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "nodemon": "^2.0.12"
+    "express-session": "^1.17.2",
+    "mogodb": "0.0.1-security",
+    "mongodb": "^4.1.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.1",
+    "passport-google-oauth": "^2.0.0",
+    "promise-mysql": "^5.0.3",
+    "tedious": "^12.0.0"
   }
 }

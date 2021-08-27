@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/8410785f-4314-41be-b493-aad2f9ce95aa/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Covidm",
+    "appService.deploySubpath": "."
+}
