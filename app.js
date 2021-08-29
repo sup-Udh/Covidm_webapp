@@ -11,12 +11,12 @@ var userProfile;
  require('./auth')
  const session = require("express-session")
 
- 
 
 
 
 
-console.log(process.env)
+
+// console.log(process.env)
  
 
 // Function for the google login process
