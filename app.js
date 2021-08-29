@@ -1,31 +1,53 @@
+require('dotenv').config()
+// Importing/ requiring the variables
 const express = require('express')
-const app = express();
 const path = require('path');
 const port =  process.env.PORT ||  3000;
 const fs = require('fs')
 const mysql = require('mysql');
 const ejs  = require('ejs');
-
 const passport = require('passport');
 var userProfile;
+ require('./auth')
+ const session = require("express-session")
 
 
+
+
+
+console.log(process.env)
+ 
+
+// Function for the google login process
+
+ function isloggedIn(req , res , next) {
+   req.user ? next () : res.sendStatus(401);
+ }
+
+ function sessiondestroy(req , res){
+
+  successRedirect: '/logout'
+
+ }
+//  passport and express innit
+
+ const app = express();
+app.use(session({ secret: "cats" }));
 app.use(passport.initialize());
 app.use(passport.session());
 
+
+
+
+// For google and ejs
+
 app.set('view engine', 'ejs');
 
+// routes for googles login
 app.get('/success', (req, res) => res.send(userProfile));
 app.get('/error', (req, res) => res.send("error logging in"));
 
-passport.serializeUser(function(user, cb) {
-  cb(null, user);
-});
-
-passport.deserializeUser(function(obj, cb) {
-  cb(null, obj);
-});
-
+// ejs
 app.set('view engine', 'ejs');
 
 
@@ -43,7 +65,7 @@ app.set('view engine', 'ejs')
 
 
 
-// main route
+// ROUTES
 
 
 
@@ -56,25 +78,50 @@ app.get('/', (req, res) => {
   })
 });
 
+
 app.get('/login', (req,res) => {
     fs.readFile('./views/login/login.ejs', function(err, data) {
         res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write(data);
+        res.write(data)
         return res.end();
       });
 });
 
 
+app.get('/protected' , isloggedIn,  (req , res) => {
+  fs.readFile('./views/user_area/user.ejs', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  });
+});
+
+// SESSION LOGOUT
+
+app.get('/user/logout' , (req,res) => {
+  req.logout();
+  req.session.destroy();
+  res.send("USER LOGGED OUT")
+
+})
+
+// Scope
+app.get('/auth/google' , passport.authenticate('google' , { scope: ['email' , 'profile']})
+)
 
 
+app.get('/google/callback' , passport.authenticate('google' , {
+  successRedirect: '/protected',
+  failureRedirect :  '/auth/failure',
 
+
+} )
+)
+
+app.get('/auth/failure' , isloggedIn ,  (req,res) => {
+  res.send("<h1>Google login error Please try again later </h1>")
+})
 
 app.listen(port, () => {
   console.log(` app listening on port ${port}!`)
 });
-
-
-
-
-
-
