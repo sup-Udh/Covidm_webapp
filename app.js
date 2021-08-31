@@ -41,7 +41,7 @@ app.use(passport.session());
 
 // For google and ejs
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs'); 
 
 // routes for googles login
 app.get('/success', (req, res) => res.send(userProfile));
