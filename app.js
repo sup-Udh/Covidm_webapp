@@ -119,6 +119,9 @@ app.get('/search', (request, response) => {
  //response parameter - response object that we can use to send a response
 });
 
+
+
+
 // Scope
 app.get('/auth/google' , passport.authenticate('google' , { scope: ['email' , 'profile']})
 )
