@@ -25,6 +25,7 @@
     "passport-google-oauth2": "^0.2.0",
     "passport-oauth2": "^1.6.0",
     "promise-mysql": "^5.0.3",
+    "puppeteer": "^10.2.0",
     "tedious": "^12.0.0"
   },
   "engines": {
