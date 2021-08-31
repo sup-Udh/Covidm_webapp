@@ -115,9 +115,21 @@ app.get('/user/logout' , (req,res) => {
 // impleting the  search function test1 
 
 app.get('/search', (request, response) => {
-  //Do something when someone makes request to localhost:3000/search
-  
-  //request parameter - information about the request coming in
+ //Holds value of the query param 'searchquery'.
+    const searchQuery = request.query.searchquery;
+
+    //Do something when the searchQuery is not null.
+    if (searchQuery != null) {
+
+        searchGoogle(searchQuery)
+            .then(results => {
+                //Returns a 200 Status OK with Results JSON back to the client.
+                response.status(200);
+                response.json(results);
+            });
+    } else {
+        response.end();
+    }
  //response parameter - response object that we can use to send a response
 });
 
