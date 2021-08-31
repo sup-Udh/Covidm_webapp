@@ -89,10 +89,16 @@ app.get('/login', (req,res) => {
 });
 
 
-app.get('/protected' , isloggedIn,  (req , res) => {
+app.get('/user' , isloggedIn,  (req , res) => {
+
   fs.readFile('./views/user_area/user.ejs', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
+    // res.write(`Hello ${req.user.displayName}`);
     res.write(data);
+
+
+  
+
     return res.end();
   });
 });
@@ -112,7 +118,7 @@ app.get('/auth/google' , passport.authenticate('google' , { scope: ['email' , 'p
 
 
 app.get('/google/callback' , passport.authenticate('google' , {
-  successRedirect: '/protected',
+  successRedirect: '/user',
   failureRedirect :  '/auth/failure',
 
 
