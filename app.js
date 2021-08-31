@@ -10,8 +10,8 @@ const passport = require('passport');
 var userProfile;
  require('./auth')
  const session = require("express-session")
- // imported pupteer
-const puppeteer = require('puppeteer');
+ 
+ const fetch = require('node-fetch');
 
 
 
@@ -112,26 +112,18 @@ app.get('/user/logout' , (req,res) => {
 })
 
 
-// impleting the  search function test1 
+// api testing
 
-app.get('/search', (request, response) => {
- //Holds value of the query param 'searchquery'.
-    const searchQuery = request.query.searchquery;
+app.get('/search' , (req,res) => {
+  fetch('https://api.covidbedsindia.in/v1/storages/6089833203eef38338d05a73/Chhattisgarh')
+  .then(res => res.json())
+  .then((json) => {
+    res.send(json[0].HOSPITAL_NAME);
 
-    //Do something when the searchQuery is not null.
-    if (searchQuery != null) {
+  });
+})
 
-        searchGoogle(searchQuery)
-            .then(results => {
-                //Returns a 200 Status OK with Results JSON back to the client.
-                response.status(200);
-                response.json(results);
-            });
-    } else {
-        response.end();
-    }
- //response parameter - response object that we can use to send a response
-});
+
 
 
 
