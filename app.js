@@ -112,6 +112,15 @@ app.get('/user/logout' , (req,res) => {
 
 })
 
+
+// impleting the  search function test1 
+
+app.get('/search', (request, response) => {
+  //Do something when someone makes request to localhost:3000/search
+  //request parameter - information about the request coming in
+ //response parameter - response object that we can use to send a response
+});
+
 // Scope
 app.get('/auth/google' , passport.authenticate('google' , { scope: ['email' , 'profile']})
 )
