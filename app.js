@@ -115,12 +115,12 @@ app.get('/user/logout' , (req,res) => {
 // api testing
 
 app.get('/search' , (req,res) => {
-  fetch('https://api.covidbedsindia.in/v1/storages/6089833203eef38338d05a73/Chhattisgarh')
-  .then(res => res.json())
-  .then((json) => {
-    res.send(json[0].HOSPITAL_NAME);
+  // fetch('https://api.covidbedsindia.in/v1/storages/6089833203eef38338d05a73/Chhattisgarh')
+  // .then(res => res.json())
+  // .then((json) => {
+  //   res.send(json[0].HOSPITAL_NAME);
 
-  });
+  // });
 })
 
 
