@@ -5,8 +5,9 @@
 .heading1{
     font-family: 'Lato', sans-serif;
     color:white;
-    margin-left: 500px;
+    margin-left: 450px;
     margin-top:100px;
+    font-size: 3rem;
     
 
 
@@ -21,6 +22,10 @@
   margin-top:30px;
   margin-left:50px;
   
+}
+
+.sub-header{
+  margin-left:500px;
 }
 
 
