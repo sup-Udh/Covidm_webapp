@@ -1,33 +1,37 @@
 
 .header{
-    background-color: #242582;
-    width: 2000px;
-    height: 500px;
-    padding: 50px;
-    border: 1px solid blue;
-}
+    background-color: #5c65f7}
 
 .heading1{
     font-family: 'Lato', sans-serif;
     color:white;
+    margin-left: 500px;
+    margin-top:100px;
+    
 
 
 }
 
 .btn1{
-    margin-left: 100px;
+    margin-left:900px;
+    margin-top:30px;
+}
+
+.btn2{
+  margin-top:30px;
+  margin-left:50px;
+  
 }
 
 
 
-.wrapper {
+/* .wrapper {
     height: 100vh;
-    /*This part is important for centering*/
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
+  } */
+/*   
   .typing-demo {
     width: 35ch;
     animation: typing 2s steps(30), blink .5s step-end infinite alternate;
@@ -57,3 +61,4 @@
     margin-left: 700px;
     margin-bottom: -300px; 
 }
+ */
