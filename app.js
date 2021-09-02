@@ -56,6 +56,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'))
 app.use('/css', express.static(__dirname + 'public/css'))
 
+
 // Set Views
 app.set('views', './views')
 app.set('login'  , './views/index.html')
