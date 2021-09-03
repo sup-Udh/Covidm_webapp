@@ -9,7 +9,7 @@ passport.use(new GoogleStrategy({
   clientID: GOOGLE_CLIENT_ID,
   clientSecret: process.env.API_KEY,
   // switch back later on to the main heroku route (IMP REMINDER
-  callbackURL: "https://covidm-beta.herokuapp.com/google/callback",
+  callbackURL: "http://localhost:3000/google/callback",
   passReqToCallback: true,
 
 
