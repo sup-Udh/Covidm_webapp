@@ -7,7 +7,13 @@
 
 ## Project Components
 - [`web`].(./web) - node js , ejs , css (bootstrap) , js 
+
+
+
 -[`chrome_extension`].(./extension) - html , js , api's , css
-(currently under development)- [`mobile`].(./mobile) - flutter mobile app 
+
+(currently under development)- [`mobile`].(./mobile) - flutter mobile app
+
+
 -[`landing_page`].(./landing page)- Landing page.
 
