@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Covid 19</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="header">welcome to Covidm
+      <p>A place where you can find help to Fight the Virus
+
+      </p>
+      <hr>
+
+      <br>
+        
+    </div>
+    <div class="container">
+    <form class="form-data" autocomplete="on">
+      <div class="enter-country">
+        <b>Enter a country name:</b>
+      </div>
+      <div>
+        <input type="text" class="country-name" />
+      </div><br>
+      <button class="search-btn  btn btn-primary" onclick="errornotfound()" >Search</button>
+    </form>
+    <div class="result">
+      <div class="loading"><div class ="lazy" style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe loading="lazy"  src="https://giphy.com/embed/feN0YJbVs0fwA" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/artists-on-tumblr-design-feN0YJbVs0fwA">via GIPHY</a></p></div>
+      <div class="errors"></div>
+      <div class="data"></div>
+      <div id="Notfound"></div>
+      <div class="result-container">
+
+
+        <p><strong>New cases: </strong><span class="todayCases"></span></p>
+        <p><strong>New deaths: </strong><span class="todayDeaths"></span></p>
+        <p><strong>Total cases: </strong><span class="cases"></span></p>
+        <p><strong>Total recovered: </strong> <span class="recovered"></span></p>
+        <p><strong>Total deaths: </strong><span class="deaths"></span></p>
+        <p><strong>Total tests: </strong><span class="tests"></span></p>
+        <center><span class="safe">Stay Safe and Healthy</span></center>
+
+
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>

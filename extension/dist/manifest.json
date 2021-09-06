@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Covid19",
+    "version": "1.0.0",
+    "description": "Provides the cases details regarding Covid19 with respective to any Country",
+    "browser_action": {
+      "default_popup": "index.html"
+    },
+    "icons":{
+      "16": "./icons/icon.png",
+      "64": "./icons/icon.png",
+     "128": "./icons/icon.png"
+    },
+
+    "web_accessible_resources": ["images/loading.gif"],
+
+
+    "content_security_policy": "script-src 'self' https://unpkg.com ; object-src 'self'"
+  }
