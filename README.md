@@ -16,7 +16,7 @@ Covidm a open source website where anyone can acces it, with this you can find b
 
 
 ## Project Components
-- [`web`].(./web) - node js , ejs , css (bootstrap) , js 
+- [`web`].(./views) - node js , ejs , css (bootstrap) , js 
 
 
 
