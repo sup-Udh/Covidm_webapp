@@ -16,14 +16,14 @@ Covidm a open source website where anyone can acces it, with this you can find b
 
 
 ## Project Components
-- [`web`].(./views) - node js , ejs , css (bootstrap) , js 
+- [`web`](./views) - node js , ejs , css (bootstrap) , js 
 
 
 
--[`chrome_extension`].(./extension) - html , js , api's , css
+-[`chrome_extension`](./extension) - html , js , api's , css
 
-- (currently under development) [`mobile`].(./mobile) - flutter mobile app
+- (currently under development) [`mobile`](./mobile) - flutter mobile app
 
 
--[`landing_page`].(./landing page)- Landing page.
+-[`landing_page`](./landing page)- Landing page.
 
