@@ -34,7 +34,7 @@ passport.deserializeUser(function(user, done) {
 passport.use(new GitHubStrategy({
   clientID: '45b8c373721feb005300',
   clientSecret: process.env.CLIENT_SECERT,
-  callbackURL: "https://covidm-beta.herokuapp.com/google/callback"
+  callbackURL: "https://covidm-beta.herokuapp.com/github/callback"
 },
 function(accessToken, refreshToken, profile, done) {
   return done(null, profile);
