@@ -148,6 +148,7 @@ app.get('/auth/failure' , isloggedIn ,  (req,res) => {
 
 app.get('/auth/github',passport.authenticate('github',{ scope: [ 'user:email' ] }));
 
+
 app.get('/github/callback',passport.authenticate('github', {
  successRedirect: '/user',
  failureRedirect: '/auth/failure',
