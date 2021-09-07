@@ -146,6 +146,17 @@ app.get('/auth/failure' , isloggedIn ,  (req,res) => {
   res.send("<h1>Google login error Please try again later </h1>")
 })
 
+app.get('/auth/github',passport.authenticate('github',{ scope: [ 'user:email' ] }));
+
+app.get('/auth/github/callback',passport.authenticate('github', {
+ failureRedirect: '/auth/failure',
+ failureRedirect: '/auth/failure',
+ 
+} )
+)
+
+
+
 app.listen(port, () => {
   console.log(` app listening on port ${port}!`)
 });
