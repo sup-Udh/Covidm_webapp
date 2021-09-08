@@ -25,5 +25,5 @@ Covidm a open source website where anyone can acces it, with this you can find b
 - (currently under development) [`mobile`](./mobile) - flutter mobile app
 
 
--[`main`](.app.js) - main files
+[`main`](.app.js) - main files
 
