@@ -113,6 +113,11 @@ app.get('/user/logout' , (req,res) => {
 })
 
 
+app.get('/about-us', (req,res) =>{
+  res.send("ABOUT US PAGE!")
+})
+
+
 // api testing
 
 app.get('/search' , (req,res) => {
