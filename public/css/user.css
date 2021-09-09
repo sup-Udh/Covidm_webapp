@@ -1,3 +1,13 @@
-body{
-    background-color: #5c65f7;
+.main{
+    font-size:3rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.hero{
+    vertical-align: middle;
+    margin-left: 500px;
+    height:200px;
+    width: 200px;;
+
 }
