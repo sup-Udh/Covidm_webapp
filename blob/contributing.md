@@ -24,3 +24,7 @@ then you can run the docker file and visit the localhost page
 
 happy Coding/hacking!
 
+
+## Report bugs using Github's [issues](https://github.com/hydralite/hydralite/issues)
+
+Momentarily, we use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/code123841/Covidm_webapp/issues); it's that easy!
