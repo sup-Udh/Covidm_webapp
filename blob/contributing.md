@@ -16,3 +16,11 @@ Make sure you hav node js installed to the latest with all the node modules inst
 
 we have provied you with one defualt docker file we are using the node alpine image use the docker cli and build a image with the docker file 
 then you can run the docker file and visit the localhost page 
+
+
+### Using gitpod
+
+[Open this repo on gitpod](https://rose-baboon-xp8htqi6.ws-us16.gitpod.io/) signup/login if needed and start with [docker](#using-docker) or go for the normal start one thing you need to take care is the oauth clients.
+
+happy Coding/hacking!
+
