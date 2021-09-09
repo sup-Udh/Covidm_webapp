@@ -10,6 +10,9 @@ We would love to see add new features! we want to make contributing to this proj
 - Becoming a maintainer
 
 ## Getting started
-Make sure you hav node js installed to the latest with all the node modules installed from the `package-json` file once you hav comepleted then set up the oauth cliens 
+Make sure you hav node js installed to the latest with all the node modules installed from the `package-json` file once you hav comepleted then set up the oauth clients and keep your keys in the `.env` file and ignore them in the `gitignore` file
 
+### Using docker
 
+we have provied you with one defualt docker file we are using the node alpine image use the docker cli and build a image with the docker file 
+then you can run the docker file and visit the localhost page 
