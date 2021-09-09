@@ -38,3 +38,7 @@ make sure you have node js installed with all the node modules by using this com
 
 - Oauth clients(Google, github) if you don't hav these then you might get errors when you start the project
 
+
+**Other ways to get started**
+
+-[with docker](https://github.com/code123841/Covidm_webapp/blob/master/blob/contributing.md#using-docker)
