@@ -29,3 +29,6 @@ Covidm a open source website where anyone can acces it, with this you can find b
 
 -[`Covidm`](./covidm_bot)- discord bot(yet to implement this)
 
+## Quick Start development 
+
+Before Running the we kindly request you to read the [the contributing guidlines/docs](https://github.com/code123841/Covidm_webapp/blob)
