@@ -28,3 +28,8 @@ happy Coding/hacking!
 ## Report bugs using Github's [issues](https://github.com/hydralite/hydralite/issues)
 
 Momentarily, we use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/code123841/Covidm_webapp/issues); it's that easy!
+
+
+## Any contributions you make will be under the Apache 2.0 Software License
+
+In short, when you submit code changes, your submissions are understood to be under the same [Apache 2.0 License](LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.
