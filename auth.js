@@ -11,7 +11,7 @@ passport.use(new GoogleStrategy({
   clientID: GOOGLE_CLIENT_ID,
   clientSecret: process.env.API_KEY,
   // switch back later on to the main heroku route (IMP REMINDER
-  callbackURL: "https://covidm-beta.herokuapp.com/google/callback",
+  callbackURL: "http://localhost:3000/google/callback",
   passReqToCallback: true,
 
 
@@ -34,7 +34,7 @@ passport.deserializeUser(function(user, done) {
 passport.use(new GitHubStrategy({
   clientID: '45b8c373721feb005300',
   clientSecret: process.env.CLIENT_SECERT,
-  callbackURL: "https://covidm-beta.herokuapp.com/github/callback"
+  callbackURL: "http://localhost:3000/github/callback"
 },
 function(accessToken, refreshToken, profile, done) {
   return done(null, profile);
