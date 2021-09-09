@@ -1,13 +1,32 @@
+.header1{
+    align-items: center;
+}
+
 .main{
     font-size:3rem;
     line-height: 1;
     font-weight: 700;
+
 }
 
 .hero{
     vertical-align: middle;
-    margin-left: 500px;
-    height:200px;
-    width: 200px;;
+    margin-left: 800px;
+    height:400px;
+    width: 400px;
 
+}
+
+.react-reveal{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
