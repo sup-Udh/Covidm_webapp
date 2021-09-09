@@ -32,3 +32,9 @@ Covidm a open source website where anyone can acces it, with this you can find b
 ## Quick Start development 
 
 Before Running the we kindly request you to read the [the contributing guidlines/docs](https://github.com/code123841/Covidm_webapp/blob/master/blob/contributing.md)
+
+make sure you have node js installed with all the node modules by using this command `npm install` then to run the project use `npm start` or you can use `nodemon`(which refreshs everytime you write code and save it in your editor)
+
+
+- Oauth clients(Google, github) if you don't hav these then you might get errors when you start the project
+
