@@ -22,6 +22,7 @@ var userProfile;
 
  function isloggedIn(req , res , next) {
    req.user ? next () : res.sendStatus(401);
+ 
  }
 
  function sessiondestroy(req , res){
@@ -29,6 +30,8 @@ var userProfile;
   successRedirect: '/logout'
 
  }
+
+
 //  passport and express innit
 
  const app = express();
@@ -112,23 +115,34 @@ app.get('/user/logout' , (req,res) => {
 
 })
 
+// NEED TO WORK ON THESE ROUTES
+app.get('/precautions' , (req,res) =>{
+  fs.readFile('/views/precautions/precautions.ejs' , function(err,data){
+    res.writeHead(200, {'Context-Type': 'text/html'})
+    res.write(data);
+
+  })
+
+
+
+})
 
 app.get('/about-us', (req,res) =>{
   res.send("ABOUT US PAGE!")
+  
 })
 
 
-// api testing
-
-app.get('/search' , (req,res) => {
-  // fetch('https://api.covidbedsindia.in/v1/storages/6089833203eef38338d05a73/Chhattisgarh')
-  // .then(res => res.json())
-  // .then((json) => {
-  //   res.send(json[0].HOSPITAL_NAME);
-
-  // });
+app.get('/donate-now', (req,res) =>{
+  res.send("DONATE HEHEHEHEHE")
 })
- 
+
+app.get('/user/search', isloggedIn , (req,res) => {
+  res.send("secert heheheheheh search page yet to work lol ty!")
+})
+
+
+
 
 
 

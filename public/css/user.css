@@ -16,6 +16,7 @@
     width: 100%;
     display:block;
     margin-top: -200px;
+    margin-bottom:200px;
 
 
 }
@@ -62,12 +63,15 @@
 }
 
 .text-5xl{
-    font-size:5rem;
+    font-size:3rem;
    
 }
 
 .font-semibold{
     font-weight: 600;
+    font-family: 'Oxygen', sans-serif;
+    font-size:4rem;
+    
 }
 
 .pb-24{
@@ -82,4 +86,69 @@
 .px-6{
     padding-left:1.5rem;
     padding-right:1.5rem;
+}
+
+.px-16{
+    padding-left: 4rem;
+    padding-left:4rem;
+}
+
+.py-5{
+    padding-bottom:1.25rem;
+    padding-right:1.25rem;
+
+}
+
+.rounded{
+    border-radius: .24rem;
+
+}
+
+.bg-primary{
+    --bg-opacity: 1;
+    background-color: #4199e1;
+    background-color: rgba(65.3055,153.35444999999999,225.39449999999997,var(--bg-opacity));
+}
+
+.text-lg{
+    font-size:1.125rem;
+}
+
+.text-large{
+    font-size:3rem;
+    font-weight: bolder;
+}
+
+.size{
+    height:200px;
+    width:200px;
+}
+
+.space{
+    padding-bottom: 5rem;
+    padding-top:-5rem;
+    margin-top:-200px;
+    padding-top:2rem;
+
+
+    
+}
+
+.btn-space{
+    margin-top:2rem;
+    display: inline;
+    
+}
+
+.blue{
+    background-color: #add8e6;
+}
+
+.box{
+    padding-top:2rem;
+    padding-bottom:4rem;
+}
+
+.pp{
+    margin-top:-200px;
 }
