@@ -29,13 +29,28 @@
 }
 
 .hero-img{
-    display: block ;
+
     margin-left:auto;
     margin-right:auto;
-    height:500px;
+    height:400px;
     max-width:100%;
-    margin-right:300px;
+    margin-right:500px;
     margin-top:-200px;
+    margin-left:200px;
+}
+
+.react-reveal{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .leading-tight {
@@ -62,4 +77,55 @@
     margin-right:600px;
     
     
+}
+
+
+.md\:text-xl {
+    font-size: 1.25rem;
+}
+.text-gray-400 {
+    --text-opacity: 1;
+    color: #cbd5e0;
+    color: rgba(203,213,224,var(--text-opacity));
+}
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+.sub{
+    text-align: center;
+    margin-left:550px;
+    padding-bottom: 5rem;
+}
+
+.vaccine-para{
+    margin-left: 550px;
+
+}
+
+.div-2{
+    padding-top: 3rem;
+}
+
+.md\:text-4xl {
+    font-size: 2.25rem;
+}
+
+.md\:text-4xl {
+    font-size: 2.25rem;
+}
+
+.md\:text-xl {
+    font-size: 1.25rem;
+}
+.text-gray-700 {
+    --text-opacity: 1;
+    color: #4a5568;
+    color: rgba(74,85,104,var(--text-opacity));
+}
+.pt-2 {
+    padding-top: .5rem;
+}
+.leading-relaxed {
+    line-height: 1.625;
 }
