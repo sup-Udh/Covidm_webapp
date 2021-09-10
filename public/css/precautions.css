@@ -166,3 +166,15 @@
     margin-left:950px;
     margin-top:-300px;
 }
+.text-gray-500 {
+    --text-opacity: 1;
+    color: #a0aec0;
+    color: rgba(160,174,192,var(--text-opacity));
+}
+.text-center {
+    text-align: center;
+}
+.py-10 {
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+}
