@@ -129,3 +129,26 @@
 .leading-relaxed {
     line-height: 1.625;
 }
+
+.social-distance{
+    height: 400px;
+    max-width: 100%;
+    margin-top:-200px;
+    padding-left:3rem;
+}
+
+.font-small{
+    font-size: medium;
+}
+
+.place-1{
+    margin-left:500px;
+
+    
+}
+
+.main-h3{
+    margin-left: 500px;
+    padding-top:10rem;
+
+}
