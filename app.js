@@ -117,15 +117,13 @@ app.get('/user/logout' , (req,res) => {
 
 // NEED TO WORK ON THESE ROUTES
 app.get('/precautions' , (req,res) =>{
-  fs.readFile('/views/precautions/precautions.ejs' , function(err,data){
-    res.writeHead(200, {'Context-Type': 'text/html'})
+  fs.readFile('./views/precautions/precautions.ejs' , function(err,data){
+    res.writeHead(200, {'Context-Type': 'text/html'});
     res.write(data);
-
+    return res.end();
   })
 
-
-
-})
+});
 
 app.get('/about-us', (req,res) =>{
   res.send("ABOUT US PAGE!")
