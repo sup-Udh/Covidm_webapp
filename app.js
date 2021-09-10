@@ -132,7 +132,11 @@ app.get('/about-us', (req,res) =>{
 
 
 app.get('/donate-now', (req,res) =>{
-  res.send("DONATE HEHEHEHEHE")
+  fs.readFile('./views/donation/donation.ejs' , function(err,data){
+    res.writeHead(200, {'Context-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  })
 })
 
 app.get('/user/search', isloggedIn , (req,res) => {
