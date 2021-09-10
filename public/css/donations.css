@@ -1,0 +1,22 @@
+.text-center {
+    text-align: center;
+}
+.pt-10 {
+    padding-top: 2.5rem;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-primary-lighter {
+    --text-opacity: 1;
+    color: #2b8ede;
+    color: rgba(43.24799999999999,141.53520000000003,221.95200000000003,var(--text-opacity));
+}
+.text-5xl {
+    font-size: 3rem;
+}
+.font-semibold {
+    font-weight: 600;
+}
