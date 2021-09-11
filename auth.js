@@ -1,6 +1,7 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
 const GitHubStrategy = require('passport-github2').Strategy;
+var LinkedInStrategy = require('@sokratis/passport-linkedin-oauth2').Strategy;
 
 
 
@@ -38,5 +39,16 @@ passport.use(new GitHubStrategy({
 },
 function(accessToken, refreshToken, profile, done) {
   return done(null, profile);
+}
+));
+// CHANGE CALL BACK URL WHEN DEPLOYED PLSSS DON'T FOGETTT
+// ON ALL THE FRICKING WEBSITE FOR OUATHS (GITHUB , LINKDINN)
+passport.use(new LinkedInStrategy({
+  clientID: '86to9023qpbh3p',
+  clientSecret: process.env.LINKEDIN_KEY,
+  callbackURL: "http://localhost:3000/linkedin/callback"
+},
+function(acessToken , refreshToken , profile, done){
+    return done(null , profile);
 }
 ));

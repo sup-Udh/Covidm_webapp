@@ -164,7 +164,7 @@ app.get('/google/callback' , passport.authenticate('google' , {
 )
 
 app.get('/auth/failure' , isloggedIn ,  (req,res) => {
-  res.send("<h1>Google login error Please try again later </h1>")
+  res.send("<h1> login error Please try again later </h1>")
 })
 
 app.get('/auth/github',passport.authenticate('github',{ scope: [ 'user:email' ] }));
@@ -175,6 +175,16 @@ app.get('/github/callback',passport.authenticate('github', {
  failureRedirect: '/auth/failure',
 
 } )
+)
+
+app.get('/auth/linkedin',
+  passport.authenticate('linkedin', { scope: [ 'r_emailaddress' , 'r_liteprofile'] }));
+
+app.get('/linkedin/callback' , passport.authenticate('linkedin' , {
+  successRedirect: '/user',
+  failureRedirect: '/auth/failure',
+} )
+
 )
 
 
