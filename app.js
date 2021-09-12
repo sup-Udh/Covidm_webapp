@@ -75,7 +75,7 @@ app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
   // console.log("user has entered the home page")
-  fs.readFile('./views/logout/logout.ejs' , function(err,data){
+  fs.readFile('./views/home_page/home.ejs' , function(err,data){
     res.writeHead(200, {'Context-type': 'text/html'});
     res.write(data);
     return res.end();
