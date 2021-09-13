@@ -10,8 +10,8 @@ const passport = require('passport');
 var userProfile;
  require('./auth')
  const session = require("express-session")
- 
  const fetch = require('node-fetch');
+
 
 
 
@@ -58,6 +58,7 @@ app.set('view engine', 'ejs');
 // Static Files
 app.use(express.static('public'))
 app.use('/css', express.static(__dirname + 'public/css'))
+app.use('/js' , express.static(__dirname + 'public/js'))
 
 
 // Set Views
@@ -69,9 +70,25 @@ app.set('view engine', 'ejs')
 
 
 
+
 // ROUTES
 
+app.use((req, res, next) => {
+  res.header({"Access-Control-Allow-Origin": "*"});
+  next();
 
+
+})
+
+
+app.get('/list' , (req,res) => {
+  fs.readFile('./views/data/testCases.json' , 'utf8' , (err , data) =>{
+    if(err){
+      throw err;
+    }
+    res.send(JSON.parse(data))
+  });
+});
 
 app.get('/', (req, res) => {
   // console.log("user has entered the home page")
@@ -143,8 +160,14 @@ app.get('/donate-now', (req,res) =>{
   })
 })
 
+// search page....
+
 app.get('/user/search', isloggedIn , (req,res) => {
-  res.send("secert heheheheheh search page yet to work lol ty!")
+  fs.readFile('./views/search/search.ejs' , function(err, data){
+    res.writeHead(200, {'Context-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  })
 })
 
 

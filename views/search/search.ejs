@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covidm</title>
+</head>
+<body>
+    <h1>Search!</h1>
+    <input type="text" id="searchField">
+    
+</body>
+
+
+<script>
+
+    function searchCase(query){
+
+        const uri = `https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true?q=${query}`;
+        // response
+        fetch(uri)
+        .then(response => response.json())
+        .then(( jsonData  ) => {
+            // const results = jsonData.map(element => element.regionData.region);
+            console.log(jsonData);
+
+        });
+    }
+
+    window.onload = () => {
+        const searchFieldElement = document.getElementById("searchField")
+        searchFieldElement.onkeyup = (event) => {
+            console.log(searchFieldElement.value);
+            searchCase(searchFieldElement.value)
+        };
+    }
+
+</script>
+</html>
