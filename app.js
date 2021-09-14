@@ -12,11 +12,6 @@ var userProfile;
  const session = require("express-session")
  const fetch = require('node-fetch');
 
-
- 
-
-
-
 // console.log(process.env)
 //  testing from git pod
 
@@ -84,7 +79,7 @@ app.use((req, res, next) => {
 
 
 app.get('/list' , (req,res) => {
-  fs.readFile('./views/data/testCases.json' , 'utf8' , (err , data) =>{
+  fs.readFile('./views/data/testData.json' , 'utf8' , (err , data) =>{
     if(err){
       throw err;
     }

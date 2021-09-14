@@ -1,0 +1,23 @@
+{
+    "updated": 1631601385639,
+    "cases": 226125240,
+    "todayCases": 33508,
+    "deaths": 4653143,
+    "todayDeaths": 684,
+    "recovered": 202773861,
+    "todayRecovered": 60505,
+    "active": 18698236,
+    "critical": 102546,
+    "casesPerOneMillion": 29010,
+    "deathsPerOneMillion": 597,
+    "tests": 3509815223,
+    "testsPerOneMillion": 447118.23,
+    "population": 7849859383,
+    "oneCasePerPeople": 0,
+    "oneDeathPerPeople": 0,
+    "oneTestPerPeople": 0,
+    "activePerOneMillion": 2381.98,
+    "recoveredPerOneMillion": 25831.53,
+    "criticalPerOneMillion": 13.06,
+    "affectedCountries": 223
+}
